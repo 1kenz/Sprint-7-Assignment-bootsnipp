@@ -1,22 +1,23 @@
-<link
-  href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
-  rel="stylesheet"
-  id="bootstrap-css"
-/>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
-
 <!DOCTYPE html>
 <html lang="en">
+  <link
+    href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
+    rel="stylesheet"
+    id="bootstrap-css"
+  />
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <!------ Include the above in your HEAD tag ---------->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/public/stylesheets/navbar.css" />
+    <link rel="stylesheet" href="/stylesheets/navbar.css" />
+    <link rel="stylesheet" href="/stylesheets/register.css" />
+    <script src="/javascripts/register.js"></script>
+
     <title>Register</title>
   </head>
   <body>
-    <div class="container-fluid">
       <!-- Second navbar for profile settings -->
       <nav class="navbar navbar-inverse">
         <div class="container">
@@ -40,7 +41,7 @@
           <div class="collapse navbar-collapse" id="navbar-collapse-4">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="/register">Register</a></li>
-              <li><a href="/login">Login</a></li>
+              <li><a href="/register">Login</a></li>
               <li>
                 <a
                   class="btn btn-default btn-outline btn-circle"
@@ -87,11 +88,10 @@
         <!-- /.container -->
       </nav>
       <!-- /.navbar -->
-    </div>
+    </>
     <!-- /.container-fluid -->
 
-    <!-- register page -->
-
+    <!-- register panel -->
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-md-offset-3">
@@ -99,10 +99,10 @@
             <div class="panel-heading">
               <div class="row">
                 <div class="col-xs-6">
-                  <a href="/login" class="active" id="login-form-link">Login</a>
+                  <a href="#" class="active" id="login-form-link">Login</a>
                 </div>
                 <div class="col-xs-6">
-                  <a href="/register" id="register-form-link">Register</a>
+                  <a href="#" id="register-form-link">Register</a>
                 </div>
               </div>
               <hr />
@@ -110,7 +110,14 @@
             <div class="panel-body">
               <div class="row">
                 <div class="col-lg-12">
-                                    <div class="form-group">
+                  <form
+                    id="login-form"
+                    action="#"
+                    method="post"
+                    role="form"
+                    style="display: block"
+                  >
+                    <div class="form-group">
                       <input
                         type="text"
                         name="username"
@@ -159,7 +166,10 @@
                       <div class="row">
                         <div class="col-lg-12">
                           <div class="text-center">
-                            <a href="/" tabindex="5" class="forgot-password"
+                            <a
+                              href="#"
+                              tabindex="5"
+                              class="forgot-password"
                               >Forgot Password?</a
                             >
                           </div>
@@ -169,7 +179,7 @@
                   </form>
                   <form
                     id="register-form"
-                    action="https://phpoll.com/register/process"
+                    action="#"
                     method="post"
                     role="form"
                     style="display: none"
