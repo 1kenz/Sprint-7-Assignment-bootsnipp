@@ -6,7 +6,7 @@
 
 <div>
   <h3>
-    <a href="https://github.com/xkendx/Sprint-7-Assignment/blob/main/Assignment-7.gif">
+    <a href="https://github.com/xkendx/Sprint-7-Assignment-bootsnipp/blob/main/Assignment-7.gif">
       Project
     </a>
    
